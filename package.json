@@ -18,6 +18,8 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "react-dock": "^0.2.4",
+    "styled-components": "^2.2.1"
   }
 }

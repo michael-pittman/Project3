@@ -18,6 +18,7 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
     "express": "^4.15.4",
     "react-dock": "^0.2.4",
     "styled-components": "^2.2.1"

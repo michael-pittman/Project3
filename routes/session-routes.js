@@ -1,14 +1,19 @@
-import sessionController from "../controllers/session-controller.js";
+const sessionController = require("../controllers/session-controller.js");
+const express = require("express");
+const router = express.Router();
 
-module.exports = function (app, passport) {
+// NOTE: determine how to appropriately pass to router as middleware
+const passport = require("../config/passport.js");
 
-  // Authentication Routing
-  
-  // logout route
-  app.get('/logout', sessionController.logout);
+router.use(passport);
 
-  // authenticate user route
-  // NOTE: determine react alternative for redirect
-  app.post('/', passport.authenticate('local-signin'));
+// Authentication Routing
 
-};
+// logout route
+router.get("/logout", sessionController.logout);
+
+// authenticate user route
+// NOTE: determine react alternative for redirect
+router.post('/', passport.authenticate('local-signin'));
+
+module.exports = router;

@@ -5,12 +5,12 @@ const GoalSchema = new Schema({
   name: {
     type: String,
     required: true
-  }
+  },
 
   type: {
     type: String,
-    required: true,
-  }
+    required: true
+  },
 
   description: {
     type: String,

@@ -8,6 +8,14 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
+// Import routes and give the server access to them.
+// =======================================================
+const sessionRoutes = require("./routes/session-routes.js");
+const userRoutes = require("./routes/user-routes.js");
+
+app.use("/user", userRoutes);
+app.use("/session", sessionRoutes);
+
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {

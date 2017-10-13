@@ -37,12 +37,12 @@ class Tile extends Component {
     return (
       <Col xs={12}>
         <Row end="xs">
-          <Wrapper>
-            <Col xs={6}/>
-          </Wrapper>
-          <SideBar>
-            <Col xs={6} />
-          </SideBar>
+
+            <Col className="border" xs={6}/>
+
+          
+            <Col className="border" xs={6} />
+
         </Row>
       </Col>
     );

@@ -37,7 +37,7 @@ class LeftSideBar extends Component {
     return (
       <Dock position='left' isVisible= 'true'>
         {<div>
-                <Title>Welcome...</Title>
+                <Title>Avocado Toast</Title>
                 <div>
                   <Input placeholder="Username" type="text" />
                   <Input placeholder="Password" type="text" />

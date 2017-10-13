@@ -17,11 +17,11 @@ class App extends Component {
         </Col>
 
         <Col xs={10}>
-          <Row >
+          <Row center="xs">
             <Tile />
           </Row>
-          <Row >
-            <Tile>            
+          <Row center="xs">
+            <Tile>
             </Tile>
           </Row>
         </Col>

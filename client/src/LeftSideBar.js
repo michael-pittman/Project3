@@ -36,7 +36,7 @@ class LeftSideBar extends Component {
   render() {
     return (
 
-      <Dock position='left' isVisible= 'true' defaultSize='50 px'>
+      <Dock position='left' isVisible= 'true' defaultSize='50 px' dimMode="none">
         {
           <div>
                 <Title>Avocado Toast</Title>

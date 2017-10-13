@@ -13,17 +13,17 @@ class App extends Component {
   <div className = "mainContainer">
       <Row >
         <Col xs={2}>
-        <LeftSideBar />
+          <LeftSideBar />
         </Col>
+
         <Col xs={10}>
-            <Row >
-              <Tile />
-            </Row>
-            <Row >
-              <Tile>
-              
-              </Tile>
-            </Row>
+          <Row >
+            <Tile />
+          </Row>
+          <Row >
+            <Tile>            
+            </Tile>
+          </Row>
         </Col>
       </Row>
 

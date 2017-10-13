@@ -35,15 +35,20 @@ const SideBar = styled.section`
 class LeftSideBar extends Component {
   render() {
     return (
-      <Dock position='left' isVisible= 'true'>
-        {<div>
+
+      <Dock position='left' isVisible= 'true' defaultSize='50 px'>
+        {
+          <div>
                 <Title>Avocado Toast</Title>
                 <div>
                   <Input placeholder="Username" type="text" />
                   <Input placeholder="Password" type="text" />
                 </div>
-        </div>}
-    </Dock>
+          </div>
+
+        }
+      </Dock>
+
     );
   }
 }

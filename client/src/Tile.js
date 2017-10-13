@@ -36,11 +36,11 @@ class Tile extends Component {
   render() {
     return (
       <Col xs={12}>
-        <Row end="xs">
+        <Row center="xs">
 
             <Col className="border" xs={6}/>
 
-          
+
             <Col className="border" xs={6} />
 
         </Row>

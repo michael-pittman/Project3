@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Dock from 'react-dock';
 import './LeftSideBar.css';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 const Input = styled.input`
   padding: 0.5em;
@@ -15,7 +16,7 @@ const Input = styled.input`
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
-  color: palevioletred;
+  color: chartreuse;
 `;
 
 const Wrapper = styled.section`
@@ -24,7 +25,8 @@ const Wrapper = styled.section`
 `;
 
 const SideBar = styled.section`
-
+  padding: 1em;
+  background: palevioletred;
 
 `;
 
@@ -42,15 +44,39 @@ class LeftSideBar extends Component {
         //     </Wrapper>
         //   </div>
         // </div>
-      <Dock position='left' isVisible='true'>
-        {<Wrapper>
-                <Title>Welcome...</Title>
-                <div>
-                  <Input placeholder="Username" type="text" />
-                  <Input placeholder="Password" type="text" />
-                </div>
-        </Wrapper>}
-    </Dock>
+    //   <Dock position='left' isVisible='true'>
+    //     {<Wrapper>
+    //             <Title>Welcome...</Title>
+    //             <div>
+    //               <Input placeholder="Username" type="text" />
+    //               <Input placeholder="Password" type="text" />
+    //             </div>
+    //     </Wrapper>}
+    // </Dock>
+
+    <Grid fluid>
+      <Row>
+        <Col xsOffset={11} xs={1} />
+          <Dock position='left' isVisible='true'>
+              {<SideBar>
+                      <Title>Welcome...</Title>
+                      <div>
+                        <Input placeholder="Username" type="text" />
+                        <Input placeholder="Password" type="text" />
+                      </div>
+              </SideBar>}
+          </Dock>
+          <Col xs={12}>
+            <Row end="xs">
+            <Wrapper>
+              <Col xs={6} />
+              HELLO WORLD!
+            </Wrapper>
+            </Row>
+          </Col>
+      </Row>
+    </Grid>
+
     );
   }
 }

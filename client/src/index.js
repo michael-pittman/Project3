@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import LeftSideBar from './LeftSideBar';
+import Tile from './Tile';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
-ReactDOM.render(<LeftSideBar />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
+// registerServiceWorker();
+ReactDOM.render(<Tile />, document.getElementById('root'));
 registerServiceWorker();

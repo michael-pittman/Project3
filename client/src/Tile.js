@@ -34,14 +34,27 @@ const SideBar = styled.section`
 class Tile extends Component {
   render() {
     return (
-      <div>
-        <div className="btn-group">
-          {this.renderButtons()}
-        </div>
-        <AutoResponsive ref="container" {...this.getAutoResponsiveProps()}>
-          {this.renderItems()}
-        </AutoResponsive>
-      </div>
+      <Col xs={12}>
+        <Row end="xs">
+        <Wrapper>
+          <Col xs={6} />
+          HELLO WORLD!
+        </Wrapper>
+        <Wrapper>
+          <Col xs={6} />
+          HELLO WORLD!
+        </Wrapper>
+        <Wrapper>
+          <Col xs={6} />
+          HELLO WORLD!
+        </Wrapper>
+        <Wrapper>
+          <Col xs={6} />
+          HELLO WORLD!
+        </Wrapper>
+        </Row>
+      </Col>
+
     );
   }
 }

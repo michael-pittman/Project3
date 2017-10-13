@@ -20,15 +20,17 @@ const Title = styled.h1`
 `;
 
 const Wrapper = styled.section`
-  padding: 1em;
+  padding: 0em;
   background: papayawhip;
 `;
 
 const SideBar = styled.section`
-  padding: 1em;
+  padding: 0em;
   background: palevioletred;
 
 `;
+
+
 
 class LeftSideBar extends Component {
   render() {
@@ -54,28 +56,42 @@ class LeftSideBar extends Component {
     //     </Wrapper>}
     // </Dock>
 
-    <Grid fluid>
-      <Row>
-        <Col xsOffset={11} xs={1} />
-          <Dock position='left' isVisible='true'>
-              {<SideBar>
-                      <Title>Welcome...</Title>
-                      <div>
-                        <Input placeholder="Username" type="text" />
-                        <Input placeholder="Password" type="text" />
-                      </div>
-              </SideBar>}
-          </Dock>
-          <Col xs={12}>
-            <Row end="xs">
-            <Wrapper>
-              <Col xs={6} />
-              HELLO WORLD!
-            </Wrapper>
-            </Row>
-          </Col>
+    <div className = "mainContainer">
+      <Row >
+        <Col xs={2}>
+        <Wrapper>
+        Hello World!
+        </Wrapper>
+        </Col>
+        <Col xs={10}>
+          <Row >
+              <Wrapper>
+                <Col xs={6}>
+                Div 1
+                </Col>
+              </Wrapper>
+              <Wrapper>
+                <Col xs={6}>
+                Div 2
+                </Col>
+              </Wrapper>
+          </Row>
+          <Row >
+            <SideBar>
+              <Col xs={6}>
+              Div 3
+              </Col>
+            </SideBar>
+            <SideBar>
+              <Col xs={6}>
+              Div 4
+              </Col>
+            </SideBar>
+        </Row>
+        </Col>
       </Row>
-    </Grid>
+
+    </div>
 
     );
   }

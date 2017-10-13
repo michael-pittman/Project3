@@ -24,6 +24,14 @@
 }
 
 .mainContainer {
-  height: 150px;
+  height: 100%;
   display: grid;
+  outline: 5px;
+}
+
+.border {
+	max-width: 100%;
+	max-height: 100%;
+	border: medium solid black;
+	background-color: #F81111;
 }

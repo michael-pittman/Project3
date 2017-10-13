@@ -1,18 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Dock from 'react-dock';
+import Tile from './Tile';
+import './LeftSideBar.css';
 import LeftSideBar from './LeftSideBar';
 
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-      </div>
+  <div className = "mainContainer">
+      <Row >
+        <Col xs={2}>
+        <LeftSideBar />
+        </Col>
+        <Col xs={10}>
+            <Row >
+              <Tile />
+            </Row>
+            <Row >
+              <Tile>
+              
+              </Tile>
+            </Row>
+        </Col>
+      </Row>
+
+    </div>
+
     );
   }
 }

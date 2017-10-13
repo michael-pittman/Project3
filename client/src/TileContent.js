@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Dock from 'react-dock';
+import AutoResponsive from 'autoresponsive-react';
 import './LeftSideBar.css';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
@@ -20,32 +21,24 @@ const Title = styled.h1`
 `;
 
 const Wrapper = styled.section`
-  padding: 0em;
+  padding: 1em;
   background: papayawhip;
 `;
 
 const SideBar = styled.section`
-  padding: 0em;
+  padding: 1em;
   background: palevioletred;
 
 `;
 
-
-
-class LeftSideBar extends Component {
+class TileStock extends Component {
   render() {
     return (
-      <Dock position='left' isVisible= 'true'>
-        {<div>
-                <Title>Welcome...</Title>
-                <div>
-                  <Input placeholder="Username" type="text" />
-                  <Input placeholder="Password" type="text" />
-                </div>
-        </div>}
-    </Dock>
+      <Input>
+      
+      </Input>
     );
   }
 }
 
-export default LeftSideBar;
+export default TileStock;

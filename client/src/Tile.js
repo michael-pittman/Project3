@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Dock from 'react-dock';
+import TileStock from './TileContent';
 import AutoResponsive from 'autoresponsive-react';
 import './LeftSideBar.css';
 import { Grid, Row, Col } from 'react-flexbox-grid';
@@ -36,25 +37,14 @@ class Tile extends Component {
     return (
       <Col xs={12}>
         <Row end="xs">
-        <Wrapper>
-          <Col xs={6} />
-          HELLO WORLD!
-        </Wrapper>
-        <Wrapper>
-          <Col xs={6} />
-          HELLO WORLD!
-        </Wrapper>
-        <Wrapper>
-          <Col xs={6} />
-          HELLO WORLD!
-        </Wrapper>
-        <Wrapper>
-          <Col xs={6} />
-          HELLO WORLD!
-        </Wrapper>
+          <Wrapper>
+            <Col xs={6}/>
+          </Wrapper>
+          <SideBar>
+            <Col xs={6} />
+          </SideBar>
         </Row>
       </Col>
-
     );
   }
 }

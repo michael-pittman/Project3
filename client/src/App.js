@@ -17,9 +17,8 @@ class App extends Component {
         <Col xs={2}>
           <LeftSideBar />
         </Col>
-
-        <Col xs={10}>
-          <Row center="xs">
+        <Col xsOffset={3} xs={8}>
+          <Row end="xs">
             <Tile />
           </Row>
           <Row center="xs">

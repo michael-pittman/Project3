@@ -1,27 +1,28 @@
 {
-  "name": "mern",
+  "name": "loginapp",
   "version": "1.0.0",
-  "description": "Mern Demo",
-  "main": "server.js",
+  "description": "Simple authentication system",
+  "main": "app.js",
   "scripts": {
-    "server": "node server.js",
-    "client": "cd client && npm run start",
-    "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
-    "build": "cd client && npm run build",
-    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Brad Traversy",
   "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
-  },
   "dependencies": {
-    "autoresponsive-react": "^1.1.11",
-    "express": "^4.15.4",
-    "react-dock": "^0.2.4",
-    "react-flexbox-grid": "^1.1.5",
-    "styled-components": "^2.2.1"
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
   }
 }

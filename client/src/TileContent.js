@@ -35,7 +35,7 @@ class TileStock extends Component {
   render() {
     return (
       <Input>
-      
+      Hello World!
       </Input>
     );
   }

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Dock from 'react-dock';
-import Tile from './Tile';
+import TileStock from './TileContent';
+import Tile  from './Tile';
+import Words from './Tile';
 import './LeftSideBar.css';
 import LeftSideBar from './LeftSideBar';
 
@@ -22,6 +24,7 @@ class App extends Component {
           </Row>
           <Row center="xs">
             <Tile>
+            <TileStock />
             </Tile>
           </Row>
         </Col>

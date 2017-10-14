@@ -45,7 +45,6 @@ class LeftSideBar extends Component {
                   <Input placeholder="Password" type="text" />
                 </div>
           </div>
-
         }
       </Dock>
 

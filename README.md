@@ -1,84 +1,69 @@
-# Create React Express App
+### Check out our React Admin Templates and support CoreUI Development
 
-## About This Boilerplate
+[![Bootstrap Admin Templates Bundle](https://genesisui.com/img/bundle2.png)](https://genesisui.com/bundle.html?support=1)
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+[Check out React Admin Templates Bundle](https://genesisui.com/bundle.html?support=1)
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+# CoreUI React - Free Bootstrap Admin Template
 
-## Starting the app locally
+This is React.js version of our Bootstrap 4 admin template [CoreUI](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template).
 
-Start by installing front and backend dependencies. While in this directory, run the following commands:
+Please help us on [Product Hunt](https://www.producthunt.com/posts/coreui-open-source-bootstrap-4-admin-template-with-angular-2-react-js-vue-js-support) & [Designer News](https://www.designernews.co/stories/81127). Thanks in advance!
 
-```
-yarn install
-cd client
-yarn install
-cd ..
-``
+Why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Boostrap Admin Templates suck.](https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
 
-After both installations complete, run the following command in your terminal:
+CoreUI is an Open Source React & Bootstrap Admin Template. But CoreUI is not just another Admin Template. It goes way beyond hitherto admin templates thanks to transparent code and file structure. And if that's not enough, let’s just add that CoreUI consists bunch of unique features and over 1000 high quality icons.
 
-```
-yarn start
-```
+CoreUI is based on Bootstrap 4 and offers 6 versions: [HTML5 AJAX](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template), [HTML5 Static](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template), [AngularJS](https://github.com/mrholek/CoreUI-AngularJS), [Angular 2+](https://github.com/mrholek/CoreUI-Angular), [React.js](https://github.com/mrholek/CoreUI-React) & [Vue.js](https://github.com/mrholek/CoreUI-Vue).
 
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
 
-## Deployment (Heroku)
+[![CoreUI React Free Bootstrap Admin Template](http://coreui.io/assets/img/coreui.png "CoreUI React Free Bootstrap Admin Template")](http://coreui.io)
 
-### Create a Git Repo
+**NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/mrholek) to keep you update with this template.
 
-Once you're ready to deploy, start by making sure your project is a git repository. If so, proceed to the next section, otherwise run the following commands in your terminal:
+## Demo
 
-```
-git init
-git add .
-git commit -m "Initial commit"
-```
+A fully functional demo is available at [CoreUI](http://coreui.io/)
 
-### Heroku
+## What's included
 
-Make sure that you have a Heroku app created for this project. If so, proceed to the next section, otherwise run the following command in your terminal:
+Within the download you'll find the following directories and files, You'll see something like this:
 
 ```
-heroku create
-```
-
-Optionally add an argument for your application's name after `create`, e.g.
-
-```
-heroku myawesomeapp
-```
-
-### Deploying
-
-#### Option 1
-
-Use the deploy script inside of the outer `package.json`
-
-After confirming that you have an up to date git repository and a Heroku app created, run the following command to deploy:
+CoreUI-React/
+├── React_Full_Project/
+├── React_Starter/
 
 ```
-yarn deploy
-```
 
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+## Other Versions
 
-#### Option 2
+CoreUI includes 6 Version for Angular 4, AngularJS, React.js, Vue.js, Static HTML5 and AJAX HTML5.
 
-Manually deploy 
+* [Angular Version (Angular 2+)](https://github.com/mrholek/CoreUI-Angular).
+* [AngularJS Version](https://github.com/mrholek/CoreUI-AngularJS).
+* [HTML5 AJAX Version](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template).
+* [HTML5 Static Version](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template).
+* [React.js Version](https://github.com/mrholek/CoreUI-React).
+* [Vue.js Version](https://github.com/mrholek/CoreUI-Vue).
 
-After confirming that you have an up to date git repository and a Heroku app created, complete the following:
+## Bugs and feature requests
 
-1. Build the React app for production by running the following command:
+Have a bug or a feature request? [Please open a new issue](https://github.com/mrholek/CoreUI-React/issues/new).
 
-```
-yarn build
-```
+## Documentation
 
-2. Add and commit all changes to git
+CoreUI's documentation, is hosted on our website [CoreUI](http://coreui.io/)
 
-3. Push to Heroku
 
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+## Copyright and license
+
+copyright 2017 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/mrholek/CoreUI-React/blob/master/LICENSE).
+creativeLabs Łukasz Holeczek reserves the right to change the license of future releases. You can’t re-distribute the CoreUI as stock. You can’t do this if you modify the CoreUI.
+
+## Support CoreUI Development
+
+CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by donating on [PayPal](https://www.paypal.me/holeczek) or buying one of our [premium bootstrap 4 admin templates](https://genesisui.com/?support=1).
+
+As of now I am exploring the possibility of working on CoreUI fulltime - if you are a business that is building core products using CoreUI, I am also open to conversations regarding custom sponsorship / consulting arrangements. Get in touch on [Twitter](https://twitter.com/lukaszholeczek).

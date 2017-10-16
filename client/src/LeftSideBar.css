@@ -22,3 +22,18 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.mainContainer {
+  height: 100%;
+  display: grid;
+  outline: 5px;
+}
+
+.border {
+  max-width: 30%;
+	max-height: 30%;
+	border: medium solid chartreuse;
+	background-color: papayawhip;
+	width: 25px;
+	height: 300px;
+}

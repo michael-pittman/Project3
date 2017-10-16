@@ -21,6 +21,7 @@
     "bcrypt-nodejs": "^0.0.3",
     "express": "^4.15.4",
     "react-dock": "^0.2.4",
+    "react-flexbox-grid": "^1.1.5",
     "styled-components": "^2.2.1"
   }
 }

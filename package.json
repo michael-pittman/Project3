@@ -18,9 +18,11 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "autoresponsive-react": "^1.1.11",
     "express": "^4.15.4",
     "mongoose": "^4.12.1",
     "react-dock": "^0.2.4",
+    "react-flexbox-grid": "^1.1.5",
     "styled-components": "^2.2.1"
   }
 }

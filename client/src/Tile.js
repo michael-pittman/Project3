@@ -37,12 +37,8 @@ class Tile extends Component {
     return (
       <Col xs={12}>
         <Row center="xs">
-
             <Col className="border" xs={6}/>
-
-
             <Col className="border" xs={6} />
-
         </Row>
       </Col>
     );

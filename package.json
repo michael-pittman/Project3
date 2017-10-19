@@ -1,13 +1,11 @@
 {
-  "name": "@coreui/react",
+  "name": "MileStone",
   "version": "1.0.1",
   "description": "",
-  "author": "Łukasz Holeczek <lukasz@holeczek.pl>",
-  "url": "http://coreui.io",
   "copyright": "Copyright 2017 creativeLabs Łukasz Holeczek",
   "license": "MIT",
   "private": true,
-  "homepage": ".",
+  "homepage": "/",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

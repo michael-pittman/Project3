@@ -13,7 +13,7 @@ import '../scss/style.scss'
 import '../scss/core/_dropdown-menu-right.scss'
 
 // Containers
-import Full from './containers/Full/Full'
+import Full from './containers/Full/'
 
 // Views
 import Login from './views/Pages/Login/'

@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Goal = require("./Goal");
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
@@ -17,7 +18,7 @@ const UserSchema = new Schema({
     required: true
   },
 
-  goals: [{ type: SchemaTypes.ObjectId, ref: "Goal"}]
+  goals: [Goal]
 });
 
 const User = mongoose.model("User", UserSchema);

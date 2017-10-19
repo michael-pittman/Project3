@@ -46,7 +46,7 @@
   },
   "scripts": {
     "dev": "webpack -d --progress --watch --profile --json > compilation-stats.json --env.dev",
-    "start": "webpack --progress --colors --inline --env.dev",
+    "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
     "build": "webpack -p --progress --env.prod",
     "clean": "rimraf ./build"
   },

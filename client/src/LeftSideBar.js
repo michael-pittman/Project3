@@ -30,40 +30,6 @@ const SideBar = styled.section`
 
 `;
 
-// class Login extends React.Component {
-//   // Setting the component's initial state
-//   state = {
-//     userName: "",
-//     password: ""
-//   }
-//
-// handleChange = (e) => {
-//   this.setState({
-//     [e.target.name]: e.target.value
-//   })
-// }
-//
-//   render(){
-//     return
-//     <div className= 'login'>
-//       <input
-//         placeholder="Username"
-//         type="text"
-//         name= "userName"
-//         value={this.state.userName}
-//         onChange={this.handleChange}
-//         />
-//
-//         <input
-//           placeholder="Password"
-//           type="text"
-//           name= "password"
-//           value={this.state.password}
-//           onChange={this.handleChange}
-//           />
-//     </div>;
-//   }
-// }
 
 
 class LeftSideBar extends Component {

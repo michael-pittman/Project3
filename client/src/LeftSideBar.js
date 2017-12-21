@@ -33,22 +33,18 @@ const SideBar = styled.section`
 
 
 class LeftSideBar extends Component {
-  render() {
+ constructor(props) {
+    super(props);
+    this.state = {isVisible: true};
+  } 
+render() {
     return (
-
-      <Dock position='left' isVisible= 'true' defaultSize='50 px' dimMode="none">
-        {
-          <div>
-            <Title>Old Major</Title>                
-            <hr></hr>
-            <p>menu</p>
-            <p>location</p> 
-            <p>photos</p>
-            
-          </div>
-        }
-      </Dock>
-
+        <Dock position='left' isVisible={this.state.isVisible}>
+      {/* you can pass a function as a child here */}
+      <div onClick={() => this.setState({ isVisible: !this.state.isVisible })}>
+        
+      </div>
+    </Dock>
     );
   }
 }

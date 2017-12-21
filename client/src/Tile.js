@@ -40,9 +40,6 @@ class Tile extends Component {
 
             <Col className="border" xs={6}/>
 
-
-            <Col className="border" xs={6} />
-
         </Row>
       </Col>
     );

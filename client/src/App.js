@@ -6,31 +6,26 @@ import Tile  from './Tile';
 import Words from './Tile';
 import './LeftSideBar.css';
 import LeftSideBar from './LeftSideBar';
-
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class App extends Component {
   render() {
     return (
   <div className = "mainContainer">
-      <Row >
-        <Col xs={2}>
-          <LeftSideBar />
-        </Col>
-
-        <Col xs={10}>
-          <Row center="xs">
+    <Row >
+      <Col xs={2}>
+        <LeftSideBar />
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>
+        <Row center="xs">
+          <Col xs={6} />
             <Tile />
-          </Row>
-          <Row center="xs">
-            <Tile>
-            <TileStock />
-            </Tile>
-          </Row>
-        </Col>
-      </Row>
-
-    </div>
+        </Row>
+      </Col>
+    </Row>
+  </div>
 
     );
   }

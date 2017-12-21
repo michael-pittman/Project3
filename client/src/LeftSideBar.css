@@ -27,6 +27,7 @@
   height: 100%;
   display: grid;
   outline: 5px;
+  width: auto;
 }
 
 .border {

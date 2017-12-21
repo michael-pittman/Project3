@@ -39,11 +39,12 @@ class LeftSideBar extends Component {
       <Dock position='left' isVisible= 'true' defaultSize='50 px' dimMode="none">
         {
           <div>
-                <Title>Avocado Toast</Title>
-                <div>
-                  <Input placeholder="Username" type="text" />
-                  <Input placeholder="Password" type="text" />
-                </div>
+            <Title>Old Major</Title>                
+            <hr></hr>
+            <p>menu</p>
+            <p>location</p> 
+            <p>photos</p>
+            
           </div>
         }
       </Dock>

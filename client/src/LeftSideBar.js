@@ -111,7 +111,7 @@ class LeftSideBar extends React.Component {
 
     return (
       <Sidebar {...sidebarProps}>
-        
+          
       </Sidebar>
     );
   }
